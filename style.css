@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.First {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), 
+                    url('images/kolkatacampus.jpeg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 6px;
+}
+
+.logo img {
+  width: 200px;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  position: relative;
+  padding-bottom: 5px; /* Ensures space for underline */
+}
+
+.nav-links ul li a::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background: orange;
+  display: block;
+  position: absolute;
+  right: 0;  /* Underline starts from right */
+  bottom: 0;
+  transition: width 0.4s ease-in-out;
+}
+
+.nav-links ul li a:hover::after {
+  width: 100%;
+}
+
+
+.box-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 40px;
+}
+.box {
+  width: 200px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 12px;
+  padding: 15px 20px;
+  box-shadow: 0 4px 10px rgba black;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.blue {
+  background-color: blue;
+}
+.red {
+  background-color: red;
+}
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba black;
+}
+
+footer {
+    background-color: #111;
+    color: white;
+    padding: 50px 20px;
+}
+.footerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Address Section */
+.address {
+    flex: 1;
+    min-width: 250px;
+}
+.address h2 {
+    font-size: 1.7em;
+    margin-bottom: 10px;
+}
+.address p {
+    font-size: 1em;
+    line-height: 1.6;
+    opacity: 0.8;
+}
+
+/* Navigation Section */
+.footerNav {
+    flex: 1;
+    text-align: center;
+    min-width: 200px;
+}
+.footerNav ul {
+    list-style-type: none;
+    padding: 0;
+}
+.footerNav ul li {
+    margin: 10px 0;
+}
+.footerNav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.footerNav ul li a:hover {
+    opacity: 1;
+}
+
+.socialSection {
+    flex: 1;
+    text-align: right;
+    min-width: 250px;
+}
+.socialSection h2 {
+    font-size: 1.7em;
+    margin-bottom: 10px;
+}
+.socialIcons {
+    display: flex;
+    justify-content: flex-end;
+}
+.socialIcons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: orange;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i {
+    font-size: 2em;
+    color: black;
+    opacity: 0.9;
+}
+.socialIcons a:hover {
+    background-color: #444;
+    transition: 0.5s;
+}
+.socialIcons a:hover i {
+    color: white;
+    transition: 0.5s;
+}
+
+.footerBottom {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p {
+    color: white;
+}
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+.designer a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0.9;
+}
+@media (max-width: 700px) {
+    .footerContainer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .address, .footerNav, .socialSection {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .socialIcons {
+        justify-content: center;
+    }
+}
+.course {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+  color: white;
+}
+.course h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: black;
+}
+
+.course p {
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  padding: 10px;
+  color: black;
+}
+
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.course-col {
+  flex-basis: 31%;
+  background: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+h3 {
+  color: black;
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.course-col:hover {
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+.second{
+  min-height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), 
+                    url('images/graduation.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 6px;
+}
+
+.logo img {
+  width: 200px;
+}
+
+
+.nav-links {
+  flex: 1;
+ text-align: right;
+}
+
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav-links ul li a {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-decoration: none;
+  color:white;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+  color:orange; 
+}
+
+.box-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 40px;
+}
+.box {
+  width: 200px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 12px;
+  padding: 15px 20px;
+  box-shadow: 0 4px 10px rgba black;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.third {
+  min-height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), 
+                    url('images/library.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}

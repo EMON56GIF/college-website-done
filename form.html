@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <title>NSHM.com</title>
+</head>
+<body>
+
+  <section class="third">
+    <nav class="nav">
+      <a href="index.html" class="logo"> 
+        <img src="images/logo.jpg" alt="NSHM Logo">
+      </a>
+      <div class="nav-links">  
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="course.html">Course</a></li>
+          <li><a href="form.html">Form</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </nav>
+     <!-- H1 placed further down -->
+     <h1 style="text-align: center; margin-top: 60px; font-size: 40px; color: #333; font-family:Georgia, 'Times New Roman', Times, serif; color: white;">FORM</h1>
+  </section> 
+  <h1 style="text-align: center; font-size: 32px; font-family: Arial, sans-serif; color: black; margin-top: 20px;">
+    FORM FILL-UP
+  </h1>
+  
+  <p style="text-align: center; font-size: 18px; margin-top:20px; font-family: Arial, sans-serif; color: black;">
+    Please fill out the form carefully. Ensure all details are correct before submission.
+  </p>
+  
+  <section class="form-container" style="display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f4f4f4;">
+    <section class="form" style="background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); width: 400px;">
+      
+      <form action="success.html" method="get" style="display: flex; flex-direction: column; gap: 10px;">
+        
+        <label style="font-weight: bold;">Firstname:</label>
+        <input type="text" name="firstname" size="15" style="padding: 8px; border: 1px solid #ccc; border-radius: 5px;"/>
+  
+        <label style="font-weight: bold;">Lastname:</label>
+        <input type="text" name="lastname" size="15" style="padding: 8px; border: 1px solid #ccc; border-radius: 5px;"/>
+  
+        <label style="font-weight: bold;">Course:</label>
+        <select name="course" required style="padding: 8px; border: 1px solid #ccc; border-radius: 5px;">
+          <option value="">Select Course</option>
+          <option value="BCA">BCA</option>
+          <option value="MBA">MBA</option>
+          <option value="M.Sc Cyber Security">M.Sc Cyber Security</option>
+        </select>
+  
+        <label style="font-weight: bold;">Gender:</label>
+        <div style="display: flex; gap: 10px;">
+          <input type="radio" name="gender" value="male"/> Male
+          <input type="radio" name="gender" value="female"/> Female
+          <input type="radio" name="gender" value="other"/> Other
+        </div>
+  
+        <label style="font-weight: bold;">Hobbies:</label>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+          <input type="checkbox" name="hobby" value="programming"/> Programming
+          <input type="checkbox" name="hobby" value="traveling"/> Traveling
+          <input type="checkbox" name="hobby" value="gaming"/> Gaming
+        </div>
+  
+        <label style="font-weight: bold;">Country:</label>
+        <select name="country" id="country" style="padding: 8px; border: 1px solid #ccc; border-radius: 5px;">
+          <option value="">Select Country</option>
+          <option value="india">India</option>
+          <option value="usa">United States</option>
+        </select>
+  
+        <label style="font-weight: bold;">Phone:</label>
+        <input type="text" name="phone" size="10" style="padding: 8px; border: 1px solid #ccc; border-radius: 5px;"/>
+  
+        <label style="font-weight: bold;">Address:</label>
+        <textarea name="address" cols="80" rows="3" style="padding: 8px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+  
+        <label style="font-weight: bold;">Email:</label>
+        <input type="email" id="email" name="email" style="padding: 8px; border: 1px solid #ccc; border-radius: 5px;"/>
+  
+        <label style="font-weight: bold;">Password:</label>
+        <input type="password" id="pass" name="pass" style="padding: 8px; border: 1px solid #ccc; border-radius: 5px;"/>
+  
+        <div style="display: flex; justify-content: space-between;">
+          <input type="submit" value="Submit" style="background: #007BFF; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;"/>
+          <input type="reset" value="Reset" style="background: #dc3545; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer;"/>
+        </div>
+        
+      </form>
+    </section>
+  </section>
+  
+
+  <footer>
+    <div class="footerContainer">
+        <div class="address">
+            <h2>ADDRESS</h2>
+            <p>NSHM Knowledge Campus</p>
+            <p>124, BL Saha Road, Taratala</p>
+            <p>Kolkata - 700053, India</p>
+            <p>Phone: +91 8637071698</p>
+        </div>
+        <div class="footerNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="couse.html">Courses</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="form.html">Form</a></li>
+            </ul>
+        </div>
+
+        <!-- Right: Follow Us (Aligned to the edge) -->
+        <div class="socialSection">
+            <h2>FOLLOW US ON</h2>
+            <div class="socialIcons">
+                <a href="https://www.facebook.com/NSHMKnowledgeCampus/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/nshmkc/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/nshmkc"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://in.linkedin.com/company/nshmknowledgecampus"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footerBottom">
+        <p>&copy;2025; NSHM KOLKATA <span class="designer">All RIGHTS RESERVED</span></p>
+    </div>
+</footer>
+
+
+</body>
+</html>
